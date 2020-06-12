@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>Rooflint</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header   -->
+    <div class="header-nav wrapper row1">
+      <header id="header" class="clear">
+        <div id="header-logo">
+          <img src="./images/logo.png" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">الرّئيسيّة</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn">المشاريع <span>&#11206;</span> </a>
+                <div class="dropdown-content">
+                  <a href="#">أعمال سكنيّة</a>
+                  <a href="#">معارض السّيّارات</a>
+                  <a href="#">أعمال تجاريّة</a>
+                  <a href="#">أعمال ثلاثيّة الأبعاد</a>
+                </div>
+              </div>
+              <!--  <a href="#">المشاريع</a></li-->
+            </li>
+
+            <li><a href="#">حول</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="header-hero wrapper row2">
+      <div id="container" class="clear">
+        <div class="hero-title">
+          <h1>
+            أهلًا بكم في روفلِنت!
+          </h1>
+          <button class="hero-btn"><span>تصفّح المشاريع </span></button>
+        </div>
+        <img class="mySlides" src="./images/hero-car-tri2.jpg" />
+        <img class="mySlides" src="./images/residenial-hero-tri.jpg" />
+        <img class="mySlides" src="./images/retair-hero-tri2.jpg" />
+
+        <!-- Slider 
+          
+          <img class="mySlides" src="./images/hero-car.jpg" />
+          <img class="mySlides" src="./images/residenial-hero.jpg" />
+          <img class="mySlides" src="./images/retair-hero.jpg" />
+        <section id="slider">
+          <div class="w3-content w3-display-container" style="max-width: 960px;" >
+            <img class="mySlides" src="./images/demo/960x360.jpg" style="width:100%">
+            <img class="mySlides" src="./images/demo/960x360 - Copy.gif" style="width:100%">
+            <img class="mySlides" src="./images/demo/290x180.gif" style="width:100%">
+            <div class="w3-center w3-container w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          -->
+        <!--
+            <a href="#"><img src="images/demo/960x360.jpg" alt="" /></a>
+                    </section>
+          -->
+      </div>
+    </div>
+
+    <!--   Resedential catalog  -->
+    <div id="res-catalog" class="section-catalogs wrapper row2">
+      <div id="container" class="clear">
+        <div class="catalog-img">
+          <img src="images/res-grid.png" />
+        </div>
+        <div class="catalog-txt">
+          <h2>
+            أعمال سكنيّة
+          </h2>
+          <button>
+            تحميل الكاتالوج
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--   Cars catalog  -->
+    <div id="cars-catalog" class="section-catalogs wrapper row2">
+      <div id="container" class="clear">
+        <div class="catalog-img">
+          <img src="images/cars-grid.png" />
+        </div>
+        <div class="catalog-txt">
+          <h2>
+            معارض السّيّارات
+          </h2>
+          <button>
+            تحميل الكاتالوج
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--   Retail catalog  -->
+    <div id="ret-catalog" class="section-catalogs wrapper row2">
+      <div id="container" class="clear">
+        <div class="catalog-img">
+          <img src="images/ret-grid.png" />
+        </div>
+        <div class="catalog-txt">
+          <h2>
+            أعمال تجاريّة
+          </h2>
+          <button>
+            تحميل الكاتالوج
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="wrapper row3">
+      <footer id="footer" class="clear">
+        <p class="footer-left">
+          Copyright &copy; 2020 - All Rights Reserved -
+          <a href="#">Rooflint</a>
+        </p>
+        <p class="footer-right">
+          Designed By: Moayyad Zakkar
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 5 seconds
+      }
+    </script>
+  </body>
+</html>
