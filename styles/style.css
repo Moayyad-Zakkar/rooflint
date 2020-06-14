@@ -233,6 +233,22 @@ h6 {
   display: block;
 }
 
+/* Responsiveniss - hamburger button */
+
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: none;
+  }
+  /*nav ul li.icon {
+    display: block;
+    float: left;
+  }*/
+}
+
 /*----------------------------------------------Header-hero-------------------------------------*/
 
 /* ------Slider-----*/
@@ -413,6 +429,11 @@ h6 {
 #cars-catalog {
   background-color: #f8f8f8;
 }
+
+#three-d-catalog {
+  background-color: #f8f8f8;
+}
+
 #res-catalog #container {
   background-image: url("../images/yellow.png");
   background-repeat: no-repeat;
@@ -427,6 +448,12 @@ h6 {
 
 #ret-catalog #container {
   background-image: url("../images/red.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#three-d-catalog #container {
+  background-image: url("../images/green.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -475,38 +502,6 @@ h6 {
 .catalog-txt button:active {
   background-color: #d80fac;
   outline: none;
-}
-/* ------Slider-card-----*/
-
-#container #slider-card {
-  width: 100%;
-}
-#container #slider-card figure img {
-  float: left;
-  width: 630px;
-  height: 300px;
-}
-#container #slider-card figure figcaption {
-  display: block;
-  float: right;
-  width: 290px;
-  height: 260px;
-  padding: 20px;
-  overflow: hidden;
-  color: #ffffff;
-  background-color: #920974;
-  line-height: 1.6em;
-}
-#container #slider-card figure figcaption p {
-  text-align: right;
-}
-#container #slider-card figure h2 {
-  font-size: 42px;
-  font-weight: bold;
-  text-transform: none;
-  text-align: right;
-}
-#container #slider-card figure footer {
 }
 
 /*----------------------------------------------Footer-------------------------------------*/

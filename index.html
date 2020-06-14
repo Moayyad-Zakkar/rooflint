@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Header   -->
@@ -18,14 +22,14 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">الرّئيسيّة</a></li>
+            <li><a href="#home">الرّئيسيّة</a></li>
             <li>
               <div class="dropdown">
                 <a class="dropbtn">المشاريع <span>&#11206;</span> </a>
                 <div class="dropdown-content">
-                  <a href="#">أعمال سكنيّة</a>
-                  <a href="#">معارض السّيّارات</a>
-                  <a href="#">أعمال تجاريّة</a>
+                  <a href="#res-catalog">أعمال سكنيّة</a>
+                  <a href="#cars-catalog">معارض السّيّارات</a>
+                  <a href="#ret-catalog">أعمال تجاريّة</a>
                   <a href="#">أعمال ثلاثيّة الأبعاد</a>
                 </div>
               </div>
@@ -38,7 +42,7 @@
       </header>
     </div>
 
-    <div class="header-hero wrapper row2">
+    <div id="home" class="header-hero wrapper row2">
       <div id="container" class="clear">
         <div class="hero-title">
           <h1>
@@ -119,6 +123,23 @@
         <div class="catalog-txt">
           <h2>
             أعمال تجاريّة
+          </h2>
+          <button>
+            تحميل الكاتالوج
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--   3d catalog  -->
+    <div id="three-d-catalog" class="section-catalogs wrapper row2">
+      <div id="container" class="clear">
+        <div class="catalog-img">
+          <img src="images/3d-grid.png" />
+        </div>
+        <div class="catalog-txt">
+          <h2>
+            أعمال ثلاثيّة الأبعاد
           </h2>
           <button>
             تحميل الكاتالوج
