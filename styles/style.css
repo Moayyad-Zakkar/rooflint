@@ -63,8 +63,7 @@ img {
 
 footer,
 header,
-nav,
-section {
+nav {
   display: block;
   margin: 0;
   padding: 0;
@@ -78,12 +77,6 @@ div.wrapper {
   margin: 0;
   padding: 0;
   text-align: left;
-}
-
-.row1,
-.row1 a {
-  color: #c0bab6;
-  background-color: #fff;
 }
 .row2 {
   color: #979797;
@@ -505,17 +498,28 @@ h6 {
 
 /* ----------------------------------------------media------------------------------------- */
 
-@media only screen and (max-width: 767px) {
-  header #header-logo {
-    display: block;
-    float: none;
+@media only screen and (max-width: 600px) {
+  /* centering logo and nav */
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header nav li {
+    margin: 0 auto;
+  }
+  /* centering hero welcome and button */
+  /*
+  .hero-title {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .hero-title h1 {
+    text-align: center;
+  }
+  .hero-title .hero-btn {
     margin-left: auto;
     margin-right: auto;
   }
-  header nav {
-    display: block;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  */
 }
