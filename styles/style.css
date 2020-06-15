@@ -530,6 +530,7 @@ h6 {
     float: none;
     font-size: 400%;
     text-shadow: 2px 2px #7001549c;
+    margin-right: 0;
   }
   .hero-btn {
     display: block;
