@@ -497,9 +497,16 @@ h6 {
 }
 
 /* ----------------------------------------------media------------------------------------- */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
 
-@media only screen and (max-width: 600px) {
-  /* centering logo and nav */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 785px) {
   #header {
     display: flex;
     flex-direction: column;
@@ -508,6 +515,52 @@ h6 {
   #header nav li {
     margin: 0 auto;
   }
+
+  .header-hero #container {
+    height: 75vh;
+  }
+  .hero-title {
+    width: 100%;
+  }
+
+  .hero-title h1 {
+    text-align: center;
+    width: 100%;
+    float: none;
+    font-size: 400%;
+  }
+  .hero-btn {
+    display: block;
+    width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header nav li {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+
+/* -----------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  /* centering logo and nav */
+
   /* centering hero welcome and button */
   /*
   .hero-title {
@@ -526,14 +579,4 @@ h6 {
 
 @media only screen and (max-width: 375px) {
   /* centering logo and nav */
-  #header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #header nav li {
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-
-  }
+}
