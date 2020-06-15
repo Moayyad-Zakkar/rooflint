@@ -13,10 +13,10 @@ purple: 920974
 green: 04a73f
 elegent: 0d4562
 */
-
+/*
 html {
   overflow-y: scroll;
-} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+} Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
 
 body {
   margin: 0;
@@ -24,7 +24,7 @@ body {
   font-size: 13px;
   font-family: "Tajawal", sans-serif;
   color: #919191;
-  background-color: #232323;
+  background-color: #ffffff;
 }
 
 .clear:after {
@@ -102,10 +102,9 @@ div.wrapper {
 /*----------------------------------------------Generalise-------------------------------------*/
 
 #header,
-#container,
 #footer {
   display: block;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -136,12 +135,6 @@ h6 {
 
 #container {
   padding: 100px 0;
-}
-#container section {
-  display: block;
-  width: 100%;
-  margin: 0 0 30px 0;
-  padding: 0;
 }
 
 /*----------------------------------------------Header-------------------------------------*/
@@ -235,27 +228,13 @@ h6 {
 
 /* Responsiveniss - hamburger button */
 
-nav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  nav ul li {
-    display: none;
-  }
-  /*nav ul li.icon {
-    display: block;
-    float: left;
-  }*/
-}
-
 /*----------------------------------------------Header-hero-------------------------------------*/
 
 /* ------Slider-----*/
 
 .header-hero #container {
   padding: 0;
-  width: 100%;
+  width: 100% !important;
   height: 768px;
   position: relative;
 }
@@ -461,6 +440,8 @@ nav .icon {
 .section-catalogs #container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .section-catalogs {
   position: relative;
@@ -520,4 +501,21 @@ nav .icon {
 
 .footer-right {
   float: right;
+}
+
+/* ----------------------------------------------media------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  header #header-logo {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
