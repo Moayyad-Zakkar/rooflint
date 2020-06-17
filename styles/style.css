@@ -248,7 +248,7 @@ h6 {
   display: flex;
 
   margin-right: 0;
-  margin-top: 10%;
+  margin-top: 290px;
   background-color: rgba(13, 70, 98, 0);
 }
 
@@ -317,8 +317,13 @@ h6 {
   border-style: none;
 }
 
-/*----------------------------------------------Header-hero-------------------------------------*/
-
+/*----------------------------------------------Our Services-------------------------------------*/
+#our-services .col-2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 960px;
+  margin: 0 auto;
+}
 /* ----------------------------------------------Catalogs ---------------------------- */
 
 #cars-catalog {
