@@ -231,7 +231,6 @@ h6 {
 }
 
 .header-hero {
-  /* height: 100vh; */
   background-color: #920974;
 }
 
@@ -313,91 +312,13 @@ h6 {
   outline: none;
 }
 
-/* Dotted Slider */
-
-.w3-display-container {
-  position: relative;
-}
-
-.w3-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-}
-
 .mySlides img {
   vertical-align: middle;
   border-style: none;
 }
 
-.w3-left,
-.w3-right,
-.w3-badge {
-  cursor: pointer;
-}
+/*----------------------------------------------Header-hero-------------------------------------*/
 
-.w3-hover-text-khaki:hover {
-  color: #b4aa50 !important;
-}
-
-.w3-display-bottommiddle {
-  position: absolute;
-  left: 50%;
-  bottom: 5%;
-  transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-}
-
-.w3-center {
-  text-align: center !important;
-}
-
-.w3-transparent,
-.w3-hover-none:hover {
-  background-color: transparent !important;
-}
-
-.w3-badge {
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  border: 1px solid #fff !important;
-  border-radius: 50%;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: center;
-}
-
-.w3-badge {
-  height: 13px;
-  width: 13px;
-  padding: 0;
-}
-
-.w3-left {
-  float: left !important;
-  margin-left: 2%;
-}
-
-.w3-right {
-  float: right !important;
-  margin-right: 2%;
-}
-
-.w3-large {
-  font-size: 18px !important;
-}
-
-.w3-text-white,
-.w3-hover-text-white:hover {
-  color: #fff !important;
-}
-
-.w3-white,
-.w3-hover-white:hover {
-  color: #000 !important;
-  background-color: #fff !important;
-}
 /* ----------------------------------------------Catalogs ---------------------------- */
 
 #cars-catalog {
