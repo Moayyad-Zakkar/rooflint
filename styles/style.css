@@ -97,7 +97,7 @@ div.wrapper {
 #header,
 #footer {
   display: block;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -153,15 +153,13 @@ h6 {
 }
 #header nav li {
   display: inline-block;
-  font-size: 150%;
-  margin-right: 40px;
+  font-size: 135%;
+  margin-right: 15px;
   text-transform: uppercase;
   /* background-color: #232323; */
   padding: 20px;
 }
-#header nav li.last {
-  margin-right: 0;
-}
+
 #header nav li a {
   color: #9e9a97;
   /*  padding: 20px; */
@@ -261,6 +259,10 @@ h6 {
   text-align: right;
   margin-top: 10%;
   margin-right: 2%;
+}
+
+.hero-title h1 span {
+  background-color: rgba(10, 47, 255, 0.486);
 }
 
 /* Header-hero Button */
@@ -520,8 +522,9 @@ h6 {
     height: 75vh;
   }
   .hero-title {
+    display: block;
     width: 100%;
-    margin-top: 20vh;
+    align-self: center;
   }
 
   .hero-title h1 {
@@ -532,6 +535,7 @@ h6 {
     text-shadow: 2px 2px #7001549c;
     margin-right: 0;
   }
+
   .hero-btn {
     display: block;
     width: auto;
@@ -551,9 +555,10 @@ h6 {
     align-items: center;
   }
   #header nav li {
-    margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
