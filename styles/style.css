@@ -334,7 +334,7 @@ h6 {
   margin-top: 20px;
 }
 
-#our-services p {
+#our-services .sub-title {
   text-align: center;
   font-size: 150%;
   font-weight: 300;
@@ -365,13 +365,13 @@ h6 {
 }
 
 #our-services .icon-large {
-  height: 75px;
+  height: 60px;
   width: auto;
 }
 
 #our-services .column button {
   display: block;
-  margin-top: 13px;
+  margin-top: 10px;
   background-color: #920974;
   color: #fff;
   padding: 10px;
