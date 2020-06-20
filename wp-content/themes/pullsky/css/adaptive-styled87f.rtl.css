@@ -1,0 +1,128 @@
+@media screen and (max-width: 1199px) {
+  #telephone-button span {
+    font-size: 12px; }
+
+  .phone-ch a {
+    font-size: 11px; }
+
+  .adress .s1 {
+    font-size: 11px; }
+
+  .adress .s2 {
+    font-size: 11px; }
+
+  [dir] .lang {
+    padding: 0; }
+    [dir] .lang ul li {
+      background-repeat: no-repeat; }
+      .lang ul li a {
+        font-size: 16px; }
+
+  /*end*/ }
+@media screen and (max-width: 991px) {
+  [dir=ltr] .header {
+    padding-left: 0px;
+    padding-right: 0px; }
+  [dir=rtl] .header {
+    padding-right: 0px;
+    padding-left: 0px; }
+
+  .top-head {
+    height: 325px; }
+
+  [dir] .top-head {
+    background-image: none; }
+
+  [dir=ltr] .top-head {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  [dir=rtl] .top-head {
+    padding-right: 0px;
+    padding-left: 0px; }
+
+  [dir=ltr] .adaptive {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  [dir=rtl] .adaptive {
+    padding-right: 0px;
+    padding-left: 0px; }
+
+  [dir] .logo {
+    padding: 18px 50%; }
+    [dir=ltr] .logo img {
+    margin-left: -71px; }
+    [dir=rtl] .logo img {
+      margin-right: -71px; }
+
+  .el-1 {
+    display: none; }
+
+  .el-2 {
+    display: none; }
+
+  [dir] .info-board {
+    padding: 0 20%; }
+
+  .lang {
+    height: 104px; }
+
+  [dir] .lang {
+    background-color: #404040;
+    text-align: center; }
+    .lang ul li {
+      width: 32px;
+      height: 32px; }
+    [dir] .lang ul li {
+      background-image: none;
+      background-size: 32px 32px;
+      background-repeat: no-repeat; }
+
+  [dir] .lang:after {
+    clear: both; }
+
+  .navbar-toggle {
+    top: -88px; }
+
+  [dir] .navigation {
+    text-align: center; }
+
+  .header-menu {
+    height: auto; }
+
+  /*end*/ }
+@media screen and (max-width: 645px) {
+  .info-board {
+    height: 190px; }
+  [dir] .info-board {
+    padding: 0 10%; }
+
+  .top-head {
+    height: 400px; }
+
+  [dir] .phone {
+    float: none; }
+
+  [dir=ltr] .circle1 {
+    left: 0px; }
+
+  [dir=rtl] .circle1 {
+    right: 0px; }
+
+  [dir=ltr] .adress .s1 {
+    left: 68px; }
+
+  [dir=rtl] .adress .s1 {
+    right: 68px; }
+
+  [dir=ltr] .adress .s2 {
+    left: 68px; }
+
+  [dir=rtl] .adress .s2 {
+    right: 68px; }
+
+  .header-menu {
+    height: auto; }
+
+  /*end*/ }

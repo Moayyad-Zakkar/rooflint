@@ -1,0 +1,98 @@
+@media screen and (max-width: 1199px) {
+  #telephone-button span {
+    font-size: 12px; }
+
+  .phone-ch a {
+    font-size: 11px; }
+
+  .adress .s1 {
+    font-size: 11px; }
+
+  .adress .s2 {
+    font-size: 11px; }
+
+  .lang {
+    padding: 0; }
+    .lang ul li {
+      background-repeat: no-repeat; }
+      .lang ul li a {
+        font-size: 16px; }
+
+  /*end*/ }
+@media screen and (max-width: 991px) {
+  .header {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .top-head {
+    background-image: none;
+    height: 325px;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .adaptive {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .logo {
+    padding: 18px 50%; }
+    .logo img {
+      margin-left: -71px; }
+
+  .el-1 {
+    display: none; }
+
+  .el-2 {
+    display: none; }
+
+  .info-board {
+    padding: 0 20%; }
+
+  .lang {
+    background-color: #404040;
+    text-align: center;
+    height: 104px; }
+    .lang ul li {
+      width: 32px;
+      height: 32px;
+      background-image: none;
+      background-size: 32px 32px;
+      background-repeat: no-repeat; }
+
+  .lang:after {
+    clear: both; }
+
+  .navbar-toggle {
+    top: -88px; }
+
+  .navigation {
+    text-align: center; }
+
+  .header-menu {
+    height: auto; }
+
+  /*end*/ }
+@media screen and (max-width: 645px) {
+  .info-board {
+    padding: 0 10%;
+    height: 190px; }
+
+  .top-head {
+    height: 400px; }
+
+  .phone {
+    float: none; }
+
+  .circle1 {
+    left: 0px; }
+
+  .adress .s1 {
+    left: 68px; }
+
+  .adress .s2 {
+    left: 68px; }
+
+  .header-menu {
+    height: auto; }
+
+  /*end*/ }

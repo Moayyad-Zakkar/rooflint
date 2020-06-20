@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rooflint</title>
+  </head>
+  <body>
+    <header id="header" class="clear">
+      <div id="header-logo">
+        <img src="./images/logo.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرّئيسيّة</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">أعمالنا <span>&#11206;</span> </a>
+              <div class="dropdown-content">
+                <a href="#res-catalog">أعمال سكنيّة</a>
+                <a href="#cars-catalog">معارض السّيّارات</a>
+                <a href="#ret-catalog">أعمال تجاريّة</a>
+                <a href="#three-d-catalog">أعمال ثلاثيّة الأبعاد</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">خدماتنا <span>&#11206;</span> </a>
+              <div class="dropdown-content">
+                <a href="#">أعمال التّصميم</a>
+                <a href="#">أعمال التّنفيذ</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">خدمات للموزّعين <span>&#11206;</span> </a>
+              <div class="dropdown-content">
+                <a href="#">خدمات التّدريب</a>
+                <a href="#">الأدوات</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">المنتجات</a></li>
+          <li><a href="contact.html">اتّصل بنا</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact-grid-container">
+      <div>
+        <form
+        class="form-container"
+          dir="rtl"
+          autocomplete="on"
+          action="https://formspree.io/info@rooflint.com"
+          method="POST"
+        >
+          <h2>تواصل معنا!</h2>
+          <input
+            class="form-row"
+            type="text"
+            autocomplete="name"
+            name="name"
+            required=""
+            placeholder="الاسم"
+          /><input
+            class="form-row"
+            type="email"
+            autocomplete="email"
+            name="email"
+            required=""
+            placeholder="عنوان البريد الإلكتروني"
+          /><input
+            class="form-row"
+            type="tel"
+            autocomplete="tel"
+            required=""
+            placeholder="رقم الهاتف"
+            name="phone"
+          /><input
+            class="form-row"
+            type="text"
+            autocomplete="street-address"
+            name="address"
+            placeholder="العنوان"
+          /><textarea
+            class="form-row"
+            rows="4"
+            name="comments"
+            placeholder="أية تعليقات تود إضافتها؟"
+          ></textarea
+            class="form-row"
+            ><button  type="submit">
+            إرسال
+          </button>
+        </form>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var markers =  [
+            {
+              country: t("Syria"),
+              city: t("Hama"),
+              address: t("Ebn Roshd Street"),
+              tel: "+963 944 636 634",
+              tel2: "+963 33 2245735",
+              coords: { lat: 35.1332781, lng: 36.7497758 },
+            },
+            {
+              country: t("Saudi Arabia"),
+              city: t("Riyadh"),
+              address: t("6169 Prince Turki Ibn Abdulaziz Al Awwal Rd"),
+              tel: "+966 55 6611 929",
+              coords: { lat: 24.7199098, lng: 46.6744008 },
+            },
+            {
+              country: t("Syria"),
+              city: t("Damascus"),
+              address: t("Eastern Villas"),
+              tel: "+963 948 563 480",
+              tel2: "+963 11 611 5780",
+              coords: { lat: 33.4981379, lng: 36.2415737 },
+            },
+            {
+              country: t("Lebanon"),
+              city: t("Anfeh"),
+              address: t("Marina Del Sol"),
+              tel: "+961 707 62371",
+              coords: { lat: 34.3660451, lng: 35.7354283 },
+            },
+            {
+              country: t("Ukraine"),
+              city: t("Kharkiv, Kharkivs'ka oblast"),
+              address: t("Otakara Yarosha St"),
+              tel: "+380 73 018 1612",
+              coords: { lat: 50.0274617, lng: 36.2225905 },
+            },
+          ]
+
+        
+
+
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: {lat: 35.1332781, lng: 36.7497758},
+        });
+        // The marker creat function iterate on 
+        for (var i = 0; i < markers.length; i++) {
+          var marker = new google.maps.Marker({ position: markers[i], map: map });
+        }
+        
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj91BzHdg0OtVjpKIRVsgObHcdO9WSS7E&callback=initMap"
+    ></script>
+  </body>
+</html>
