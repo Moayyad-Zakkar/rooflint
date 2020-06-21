@@ -630,15 +630,50 @@ p {
 .contact-grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  background-color: #f8f8f8;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: calc(100vh - 115px);
+  width: 100%;
+  padding-top: 60px;
+  overflow: hidden;
 }
+
+.form-container h2 {
+  margin-right: 15px !important;
+  font-size: 150% !important;
+}
+
 .form-row {
+  margin: 5px 15px;
+  padding: 0 15px;
+  height: 60px;
+}
+
+.form-container .btn-link {
+  width: 100px;
+}
+.form-container textarea {
+  padding-top: 5px;
+  height: 120px;
+}
+.form-row::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Tajawal", sans-serif;
+}
+.form-row::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Tajawal", sans-serif;
+}
+.form-row:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "Tajawal", sans-serif;
+}
+.form-row:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Tajawal", sans-serif;
 }
 
 #map {
