@@ -155,7 +155,7 @@
         // The marker create function iteration
         for (var i = 0; i < markers.length; i++) {
           var marker = new google.maps.Marker({
-            position: markers[i],
+            position: markers[i].coords,
             map: map,
           });
         }
