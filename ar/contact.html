@@ -109,39 +109,39 @@
         // The location of Uluru
         var markers = [
           {
-            country: t("Syria"),
-            city: t("Hama"),
-            address: t("Ebn Roshd Street"),
+            country: "Syria",
+            city: "Hama",
+            address: "Ebn Roshd Street",
             tel: "+963 944 636 634",
             tel2: "+963 33 2245735",
             coords: { lat: 35.1332781, lng: 36.7497758 },
           },
           {
-            country: t("Saudi Arabia"),
-            city: t("Riyadh"),
-            address: t("6169 Prince Turki Ibn Abdulaziz Al Awwal Rd"),
+            country: "Saudi Arabia",
+            city: "Riyadh",
+            address: "6169 Prince Turki Ibn Abdulaziz Al Awwal Rd",
             tel: "+966 55 6611 929",
             coords: { lat: 24.7199098, lng: 46.6744008 },
           },
           {
-            country: t("Syria"),
-            city: t("Damascus"),
-            address: t("Eastern Villas"),
+            country: "Syria",
+            city: "Damascus",
+            address: "Eastern Villas",
             tel: "+963 948 563 480",
             tel2: "+963 11 611 5780",
             coords: { lat: 33.4981379, lng: 36.2415737 },
           },
           {
-            country: t("Lebanon"),
-            city: t("Anfeh"),
-            address: t("Marina Del Sol"),
+            country: "Lebanon",
+            city: "Anfeh",
+            address: "Marina Del Sol",
             tel: "+961 707 62371",
             coords: { lat: 34.3660451, lng: 35.7354283 },
           },
           {
-            country: t("Ukraine"),
-            city: t("Kharkiv, Kharkivs'ka oblast"),
-            address: t("Otakara Yarosha St"),
+            country: "Ukraine",
+            city: "Kharkiv, Kharkivs'ka oblast",
+            address: "Otakara Yarosha St",
             tel: "+380 73 018 1612",
             coords: { lat: 50.0274617, lng: 36.2225905 },
           },
@@ -152,7 +152,7 @@
           zoom: 3,
           center: { lat: 35.1332781, lng: 36.7497758 },
         });
-        // The marker creat function iterate on
+        // The marker create function iteration
         for (var i = 0; i < markers.length; i++) {
           var marker = new google.maps.Marker({
             position: markers[i],

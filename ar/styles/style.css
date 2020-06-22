@@ -659,6 +659,9 @@ p {
   padding-top: 5px;
   height: 120px;
 }
+
+/* updating placeholder font family */
+
 .form-row::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: "Tajawal", sans-serif;
