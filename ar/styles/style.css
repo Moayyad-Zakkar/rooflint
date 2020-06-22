@@ -459,7 +459,7 @@ p {
 }
 #map * {
   direction: ltr;
-  text-align: center;
+  text-align: left;
 }
 
 /* ----------------------------------------------Catalogs ---------------------------- */
