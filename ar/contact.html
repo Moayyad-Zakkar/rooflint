@@ -160,6 +160,28 @@
             position: markers[i].coords,
             map: map,
           });
+          var country = markers[i].country;
+
+          var city = markers[i].city;
+          var address = markers[i].address;
+          var tel = markers[i].tel;
+          var tel2 = markers[i].tel2;
+
+          let content = `${country} - ${city}
+                         ${address}
+                         ${tel}
+                         ${tel2} `;
+          var infoWindow = new google.maps.InfoWindow();
+          google.maps.event.addListener(
+            marker,
+            "click",
+            (function (marker, content, infoWindow) {
+              return function () {
+                infoWindow.setContent(content);
+                infoWindow.open(map, marker);
+              };
+            })(marker, content, infowindow)
+          );
         }
       }
     </script>
