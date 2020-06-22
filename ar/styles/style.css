@@ -457,6 +457,10 @@ p {
 #dealers .btn-link {
   font-size: 115%;
 }
+#map * {
+  direction: ltr;
+  text-align: center;
+}
 
 /* ----------------------------------------------Catalogs ---------------------------- */
 .grid-container {
