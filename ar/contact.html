@@ -165,7 +165,7 @@
           var city = markers[i].city;
           var address = markers[i].address;
           var tel = markers[i].tel;
-          var tel2 = markers[i].tel2;
+          var tel2 = markers[i].tel2 ? markers[i].tel2 : null;
 
           let content = `<h4> ${country} - ${city} </h4><br>
                          ${address} <br>
