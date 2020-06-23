@@ -458,8 +458,8 @@ p {
   font-size: 115%;
 }
 #map * {
-  direction: ltr;
-  text-align: right;
+  /*direction: ltr;*/
+  /*text-align: right;*/
 }
 
 /* ----------------------------------------------Catalogs ---------------------------- */
