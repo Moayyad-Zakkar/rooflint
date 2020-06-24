@@ -463,6 +463,10 @@ p {
 }
 
 /* ----------------------------------------------Catalogs ---------------------------- */
+#works #container {
+  display: flex;
+  flex-direction: column;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
