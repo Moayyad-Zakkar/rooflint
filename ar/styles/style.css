@@ -458,7 +458,7 @@ p {
   font-size: 115%;
 }
 #map * {
-  /*direction: ltr;*/
+  direction: ltr;
   /*text-align: right;*/
 }
 
