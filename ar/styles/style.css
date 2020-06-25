@@ -80,7 +80,7 @@ div.wrapper {
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
-#header,
+/*#header,*/
 #footer {
   display: block;
   max-width: 1200px;
@@ -124,16 +124,37 @@ p {
 
 #header {
   padding: 20px 0;
+  position: relative;
+  display: flex;
 }
 
 #header #header-logo {
-  float: right;
+  /*float: right;*/
   margin: 0;
+}
+
+/*-language button */
+#language-btn {
+  /*position: absolute;*/
+  margin: 20px 20px 0 0;
+}
+
+#lang-btn {
+  height: 40px;
+  width: 70px;
+  font-family: "Tajawal", sans-serif;
+}
+
+#seperator1 {
+  border-left: 250px solid transparent;
+}
+#seperator2 {
+  border-left: 70px solid transparent;
 }
 
 #header nav {
   display: block;
-  float: left;
+  /*float: left;*/
   margin: 10px 0 0 0;
   /* padding: 20px 0; */
   color: #c0bab6;
@@ -454,6 +475,10 @@ p {
   margin-bottom: 20px;
 }
 
+#dealers {
+  background-color: #f8f8f8;
+}
+
 #dealers .btn-link {
   font-size: 115%;
 }
@@ -463,6 +488,15 @@ p {
 }
 
 /* ----------------------------------------------Catalogs ---------------------------- */
+.row1 {
+  margin-bottom: 100px !important;
+}
+
+.sub-video {
+  text-align: center;
+  margin: 0 auto 60px auto;
+}
+
 #works #container {
   display: flex;
   flex-direction: column;
@@ -470,68 +504,9 @@ p {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: auto;
+  width: 960px;
   margin: 0 auto;
   align-items: center;
-}
-
-/** dotted slider **/
-
-.w3-button:hover {
-  color: #000 !important;
-  background-color: #ccc !important;
-}
-.w3-black {
-  color: #fff !important;
-  background-color: #000 !important;
-}
-
-.w3-display-left {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%) scaleX(-1);
-}
-
-.w3-display-right {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(0%, -50%) scaleX(-1);
-}
-
-.w3-button {
-  border: none;
-  display: inline-block;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  text-transform: none;
-  margin: 0;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-/* */
-.w3-display-container {
-  position: relative;
-}
-
-.w3-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-}
-
-.catalog-slide {
-  vertical-align: middle;
-  border-style: none;
-  height: 250px;
-  object-fit: cover;
 }
 
 /*

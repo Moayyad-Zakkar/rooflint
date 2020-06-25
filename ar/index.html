@@ -14,9 +14,20 @@
   <body>
     <!-- Header   -->
     <header id="header" class="clear">
-      <div id="header-logo">
-        <img src="./images/logo.png" />
+      <div id="language-btn">
+        <select name="lang" id="lang-btn" onchange="location.href= this.value ">
+          <option value="../ar">العربيّة</option>
+          <option value="../en">English</option>
+        </select>
       </div>
+      <div id="seperator1"></div>
+      <div id="header-logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" />
+        </a>
+      </div>
+      <div id="seperator2"></div>
+
       <nav>
         <ul>
           <li><a href="#home">الرّئيسيّة</a></li>
@@ -119,6 +130,52 @@
       </div>
     </section>
 
+    <!--   section for dealers  -->
+    <section id="dealers" class="wrapper row2">
+      <div id="container" class="clear">
+        <h2 class="container-title">
+          خدمات للموزّعين المعتمدين
+        </h2>
+        <p class="sub-title"></p>
+        <div class="flex-container">
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/oYN5kGPZ8aQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!--<img src="./images/training.jpg" /> -->
+          </div>
+          <div class="side-text">
+            <div class="side-text-content">
+              <h3>التّدريب</h3>
+              <p>
+                توفّر شركة روفلِنت لموزّعيها المعتمدين خدمات التّدريب على
+                استخدام منتجاتها لضمان الاستخدام الصّحيح والمضبوط لتحقيق رضا
+                العملاء.
+              </p>
+              <a class="btn-link">
+                عرض المزيد
+              </a>
+            </div>
+            <div class="side-text-content">
+              <h3>الأدوات</h3>
+              <p>
+                نسعى في شركة روفلِنت إلى تأمين كافّة أدوات الإعلان والعرض
+                للموزّعين المعتمدين من بطاقات وبروشورات ولوحات إعلانيّة.
+              </p>
+              <a class="btn-link">
+                عرض المزيد
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--   gallery section  -->
 
     <section id="gallery" class="wrapper row2">
@@ -170,24 +227,90 @@
       </div>
     </section>
 
-    <!--   section for dealers  -->
-    <section id="dealers" class="wrapper row2">
+    <!--   section works  -->
+
+    <section id="our-services" class="wrapper row2">
       <div id="container" class="clear">
         <h2 class="container-title">
-          خدمات للموزّعين المعتمدين
+          أعمالنا
+        </h2>
+        <p class="sub-title"></p>
+        <div class="sub-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Osq5bNsMrsM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-2-grid row1">
+          <div class="column">
+            <img class="icon-large" src="./images/icon/residential-icon.png" />
+            <h3>
+              أعمال منزليّة
+            </h3>
+            <p>
+              تصفّح أحدث المشاريع المنزليّة من روفلِنت هنا!
+            </p>
+            <a class="btn-link" href="./downloads/Residental Brochure.pdf">
+              عرض الأعمال
+            </a>
+          </div>
+          <div class="column">
+            <img class="icon-large" src="./images/icon/car-showroom-icon.png" />
+            <h3>
+              معارض السّيّارات
+            </h3>
+            <p>
+              تصفّح أحدث مشاريع معارض السّيّارات من روفلِنت هنا!
+            </p>
+            <a class="btn-link" href="./downloads/Car Showrooms Brochure.pdf">
+              عرض الأعمال
+            </a>
+          </div>
+        </div>
+
+        <div class="col-2-grid">
+          <div class="column">
+            <img class="icon-large" src="./images/icon/retail-icon.png" />
+            <h3>
+              أعمال تجاريّة
+            </h3>
+            <p>
+              تصفّح أحدث المشاريع التّجاريّة من روفلِنت هنا!
+            </p>
+            <a class="btn-link" href="./downloads/Ratail Brochure.pdf">
+              عرض الأعمال
+            </a>
+          </div>
+          <div class="column">
+            <img class="icon-large" src="./images/icon/3d-icon.png" />
+            <h3>
+              أعمال ثلاثيّة الأبعاد
+            </h3>
+            <p>
+              تصفّح أحدث المشاريع ثلاثيّة الأبعاد من روفلِنت هنا!
+            </p>
+            <a class="btn-link" href="./downloads/3Ds Brochure.pdf">
+              عرض الأعمال
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="works" class="wrapper row2">
+      <div id="container" class="clear">
+        <h2 class="container-title">
+          أعمالنا
         </h2>
         <p class="sub-title"></p>
         <div class="flex-container">
           <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oYN5kGPZ8aQ"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <!--<img src="./images/training.jpg" /> -->
+           
           </div>
           <div class="side-text">
             <div class="side-text-content">
@@ -213,8 +336,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+              
+    </section> -->
 
     <!--   section catalog  -->
     <!--
