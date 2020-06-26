@@ -618,6 +618,7 @@ p {
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    margin: 0 !important;
   }
 
   #list-nav {
@@ -653,7 +654,7 @@ p {
     opacity: 0;
   }
 
-  .change .hamburger-button-bar2 {
+  .change .hamburger-button-bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
@@ -663,9 +664,9 @@ p {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    top: 106px; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: rgb(255, 255, 255); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -675,8 +676,9 @@ p {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
+    text-align: center;
     font-size: 25px;
-    color: #818181;
+    color: #9e9a97;
     display: block;
     transition: 0.3s;
   }
