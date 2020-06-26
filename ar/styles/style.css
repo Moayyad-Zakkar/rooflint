@@ -606,6 +606,7 @@ p {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1304px) {
   #language-btn {
+    margin-top: 0;
     margin-right: 10px;
   }
 
