@@ -14,20 +14,33 @@
   </head>
   <body>
     <header id="header" class="clear">
-      <div id="header-logo">
-        <img src="./images/logo.png" />
+      <div id="language-btn">
+        <select name="lang" id="lang-btn" onchange="location.href= this.value ">
+          <option value="../ar">العربيّة</option>
+          <option value="../en">English</option>
+        </select>
       </div>
+      <div id="seperator1"></div>
+      <div id="header-logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" />
+        </a>
+      </div>
+      <div id="seperator2"></div>
+
       <nav>
         <ul>
-          <li><a href="index.html">الرّئيسيّة</a></li>
+          <li><a href="#home">الرّئيسيّة</a></li>
           <li>
             <div class="dropdown">
               <a class="dropbtn">أعمالنا <span>&#11206;</span> </a>
               <div class="dropdown-content">
-                <a href="#res-catalog">أعمال سكنيّة</a>
-                <a href="#cars-catalog">معارض السّيّارات</a>
-                <a href="#ret-catalog">أعمال تجاريّة</a>
-                <a href="#three-d-catalog">أعمال ثلاثيّة الأبعاد</a>
+                <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
+                <a href="./downloads/Car Showrooms Brochure.pdf"
+                  >معارض السّيّارات</a
+                >
+                <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
+                <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
               </div>
             </div>
           </li>
@@ -35,7 +48,10 @@
             <div class="dropdown">
               <a class="dropbtn">خدماتنا <span>&#11206;</span> </a>
               <div class="dropdown-content">
-                <a href="#">أعمال التّصميم</a>
+                <a
+                  href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf"
+                  >أعمال التّصميم</a
+                >
                 <a href="#">أعمال التّنفيذ</a>
               </div>
             </div>
@@ -49,7 +65,17 @@
               </div>
             </div>
           </li>
-          <li><a href="#">المنتجات</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">المنتجات <span>&#11206;</span> </a>
+              <div class="dropdown-content">
+                <a href="#">الأسقف المستعارة</a>
+                <a href="#">خدمات الطّباعة</a>
+                <a href="#">المواد</a>
+                <a href="#">أدوات التركيب</a>
+              </div>
+            </div>
+          </li>
           <li><a href="contact.html">اتّصل بنا</a></li>
         </ul>
       </nav>
