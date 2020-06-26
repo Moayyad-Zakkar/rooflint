@@ -21,64 +21,123 @@
         </select>
       </div>
       <div id="seperator1"></div>
-      <div id="header-logo">
-        <a href="./index.html">
-          <img src="./images/logo.png" />
-        </a>
-      </div>
-      <div id="seperator2"></div>
 
-      <nav>
-        <ul>
-          <li><a href="#home">الرّئيسيّة</a></li>
-          <li>
-            <div class="dropdown">
-              <a class="dropbtn">أعمالنا <span>&#11206;</span> </a>
-              <div class="dropdown-content">
-                <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
-                <a href="./downloads/Car Showrooms Brochure.pdf"
-                  >معارض السّيّارات</a
-                >
-                <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
-                <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
+        <div id="header-logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" />
+          </a>
+        </div>
+        <div id="seperator2"></div>
+  
+        <nav id="list-nav">
+          <ul>
+            <li><a href="#home">الرّئيسيّة</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn">أعمالنا <span>&#11206;</span> </a>
+                <div class="dropdown-content">
+                  <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
+                  <a href="./downloads/Car Showrooms Brochure.pdf"
+                    >معارض السّيّارات</a
+                  >
+                  <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
+                  <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-              <a class="dropbtn">خدماتنا <span>&#11206;</span> </a>
-              <div class="dropdown-content">
-                <a
-                  href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf"
-                  >أعمال التّصميم</a
-                >
-                <a href="#">أعمال التّنفيذ</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn">خدماتنا <span>&#11206;</span> </a>
+                <div class="dropdown-content">
+                  <a
+                    href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf"
+                    >أعمال التّصميم</a
+                  >
+                  <a href="#">أعمال التّنفيذ</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-              <a class="dropbtn">خدمات للموزّعين <span>&#11206;</span> </a>
-              <div class="dropdown-content">
-                <a href="#">خدمات التّدريب</a>
-                <a href="#">الأدوات</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn">خدمات للموزّعين <span>&#11206;</span> </a>
+                <div class="dropdown-content">
+                  <a href="#">خدمات التّدريب</a>
+                  <a href="#">الأدوات</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
+            </li>
+            <li><div class="dropdown">
               <a class="dropbtn">المنتجات <span>&#11206;</span> </a>
               <div class="dropdown-content">
                 <a href="#">الأسقف المستعارة</a>
                 <a href="#">خدمات الطّباعة</a>
                 <a href="#">المواد</a>
                 <a href="#">أدوات التركيب</a>
-              </div>
+              </div></li>
+            <li><a href="contact.html">اتّصل بنا</a></li>
+          </ul>
+        </nav>
+      
+      
+    <nav id="hamburger-nav">
+
+      <div class="hamburger-button" onclick="openNav(this)">
+        <div class="hamburger-button-bar1"></div>
+        <div class="hamburger-button-bar2"></div>
+        <div class="hamburger-button-bar3"></div>
+      </div>
+      
+      <ul id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <li><a href="#">الرّئيسيّة</a></li>
+
+          <li>
+            <a class="dropdown-btn">أعمالنا
+            <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+              <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
+              <a href="./downloads/Car Showrooms Brochure.pdf"
+                >معارض السّيّارات</a
+              >
+              <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
+              <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
             </div>
           </li>
-          <li><a href="contact.html">اتّصل بنا</a></li>
-        </ul>
-      </nav>
+
+          <li>
+              <a class="dropdown-btn">خدماتنا
+              <i class="fa fa-caret-down"></i>
+              </a>
+            <div class="dropdown-container">
+              <a href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf">أعمال التّصميم</a>
+              <a href="#">أعمال التّنفيذ</a>
+            </div>
+        </li>
+
+        <li>
+          <a class="dropdown-btn">خدمات للموزّعين
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">خدمات التّدريب</a>
+            <a href="#">الأدوات</a>
+          </div>
+        </li>
+          <li>
+            <a class="dropdown-btn">المنتجات
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container">
+            <a href="#">الأسقف المستعارة</a>
+            <a href="#">خدمات الطّباعة</a>
+            <a href="#">المواد</a>
+            <a href="#">أدوات التركيب</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
     </header>
     <div class="contact-grid-container">
       <div>
