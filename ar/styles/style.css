@@ -421,8 +421,9 @@ p {
 
 .gallery-showcase li {
   display: block;
-  /*float: left;*/
+  float: left;
   width: 25%;
+  /*height: 300px;*/
   height: 300px;
 }
 
@@ -430,6 +431,7 @@ p {
   margin: 0;
   overflow: hidden;
   background-color: #000;
+  width: 100%;
 }
 
 .gallery-photo img {
@@ -437,6 +439,8 @@ p {
   opacity: 0.7;
   width: 100%;
   height: 300px;
+  /*height: auto;*/
+
   transform: scale(1.15);
   transition: 0.5s;
 }
@@ -516,12 +520,10 @@ p {
 
 .footer-left {
   flex-grow: 1;
-  align-items: flex-end;
 }
 
 .footer-right {
   flex-grow: 1;
-  align-items: flex-start;
 }
 
 /* -----------------------contact us ------------------------------------------------------- */
