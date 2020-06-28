@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
 
     <title>Rooflint</title>
@@ -31,7 +32,7 @@
   
         <nav id="list-nav">
           <ul>
-            <li><a href="#home">الرّئيسيّة</a></li>
+            <li><a href="./index.html">الرّئيسيّة</a></li>
             <li>
               <div class="dropdown">
                 <a class="dropbtn">أعمالنا <span>&#11206;</span> </a>
@@ -74,71 +75,68 @@
                 <a href="#">المواد</a>
                 <a href="#">أدوات التركيب</a>
               </div></li>
-            <li><a href="contact.html">اتّصل بنا</a></li>
+            <li><a href="#">اتّصل بنا</a></li>
           </ul>
         </nav>
       
       
-    <nav id="hamburger-nav">
+        <nav id="hamburger-nav">
 
-      <div class="hamburger-button" onclick="openNav(this)">
-        <div class="hamburger-button-bar1"></div>
-        <div class="hamburger-button-bar2"></div>
-        <div class="hamburger-button-bar3"></div>
-      </div>
-      
-      <ul id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-          <li><a href="#">الرّئيسيّة</a></li>
-
-          <li>
-            <a class="dropdown-btn">أعمالنا
-            <i class="fa fa-caret-down"></i>
-            </a>
-            <div class="dropdown-container">
-              <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
-              <a href="./downloads/Car Showrooms Brochure.pdf"
-                >معارض السّيّارات</a
-              >
-              <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
-              <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
-            </div>
-          </li>
-
-          <li>
-              <a class="dropdown-btn">خدماتنا
-              <i class="fa fa-caret-down"></i>
+          <div class="hamburger-button" onclick="toggleNav(this)">
+            <div class="hamburger-button-bar1"></div>
+            <div class="hamburger-button-bar2"></div>
+            <div class="hamburger-button-bar3"></div>
+          </div>
+          
+          <ul id="mySidenav" class="sidenav">          
+              <li><a href="./index.html">الرّئيسيّة</a></li>
+              <li>
+                <a class="dropdown-btn">أعمالنا
+                <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-container">
+                  <a href="./downloads/Residental Brochure.pdf">أعمال سكنيّة</a>
+                  <a href="./downloads/Car Showrooms Brochure.pdf"
+                    >معارض السّيّارات</a
+                  >
+                  <a href="./downloads/Ratail Brochure.pdf">أعمال تجاريّة</a>
+                  <a href="./downloads/3Ds Brochure.pdf">أعمال ثلاثيّة الأبعاد</a>
+                </div>
+              </li>
+              <li>
+                  <a class="dropdown-btn">خدماتنا
+                  <i class="fa fa-caret-down"></i>
+                  </a>
+                <div class="dropdown-container">
+                  <a href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf">أعمال التّصميم</a>
+                  <a href="#">أعمال التّنفيذ</a>
+                </div>
+            </li>
+            <li>
+              <a class="dropdown-btn">خدمات للموزّعين
+                <i class="fa fa-caret-down"></i>
               </a>
-            <div class="dropdown-container">
-              <a href="./downloads/Rooflint_Architectural_Designing_Brochure.pdf">أعمال التّصميم</a>
-              <a href="#">أعمال التّنفيذ</a>
-            </div>
-        </li>
-
-        <li>
-          <a class="dropdown-btn">خدمات للموزّعين
-            <i class="fa fa-caret-down"></i>
-          </a>
-          <div class="dropdown-container">
-            <a href="#">خدمات التّدريب</a>
-            <a href="#">الأدوات</a>
-          </div>
-        </li>
-          <li>
-            <a class="dropdown-btn">المنتجات
-            <i class="fa fa-caret-down"></i>
-          </a>
-          <div class="dropdown-container">
-            <a href="#">الأسقف المستعارة</a>
-            <a href="#">خدمات الطّباعة</a>
-            <a href="#">المواد</a>
-            <a href="#">أدوات التركيب</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+              <div class="dropdown-container">
+                <a href="#">خدمات التّدريب</a>
+                <a href="#">الأدوات</a>
+              </div>
+            </li>
+              <li>
+                <a class="dropdown-btn">المنتجات
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-container">
+                <a href="#">الأسقف المستعارة</a>
+                <a href="#">خدمات الطّباعة</a>
+                <a href="#">المواد</a>
+                <a href="#">أدوات التركيب</a>
+              </div>
+            </li>
+            <li><a href="#">اتّصل بنا</a></li>
+          </ul>
+        </nav>
     </header>
+
     <div class="contact-grid-container">
       <div>
         <form
@@ -191,6 +189,45 @@
     </div>
 
     <script>
+    
+    // side nav
+    
+    // sidenav drop down
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    /* Open the sidenav */
+    function toggleNav (x) {
+        function openNav(x) {
+        document.getElementById("mySidenav").style.width = "100%";
+        x.classList.toggle("change");
+      }
+    
+
+    /* Close/hide the sidenav */
+        function closeNav(x) {
+          document.getElementById("mySidenav").style.width = "0";
+          x.classList.toggle("change");
+        }
+        if (document.getElementById("mySidenav").style.width === "100%") {
+          closeNav(x)
+        } else {
+          openNav(x)
+        }
+    }
+
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
