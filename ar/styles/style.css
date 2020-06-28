@@ -750,7 +750,7 @@ p {
     font-size: 200%;
   }
   .flex-container {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   iframe {
     width: 90% !important;
