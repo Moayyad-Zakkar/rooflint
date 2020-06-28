@@ -505,18 +505,23 @@ p {
 
 #footer {
   padding: 20px 0;
+  display: flex;
+  flex-direction: row;
 }
 #footer p {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .footer-left {
-  float: left;
+  flex-grow: 1;
+  align-items: flex-end;
 }
 
 .footer-right {
-  float: right;
+  flex-grow: 1;
+  align-items: flex-start;
 }
 
 /* -----------------------contact us ------------------------------------------------------- */
@@ -754,6 +759,9 @@ p {
   }
   iframe {
     width: 90% !important;
+  }
+  #footer {
+    flex-direction: column;
   }
 }
 
