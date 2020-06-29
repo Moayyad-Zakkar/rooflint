@@ -419,20 +419,25 @@
         }
       });
     }
-    /* Open the sidenav */
-    function toggleNav (x) {
-        function openNav(x) {
-        document.getElementById("mySidenav").style.width = "100%";
-        x.classList.toggle("change");
-      }
     
+     
+      var sidenav = document.getElementById("mySidenav");
 
-    /* Close/hide the sidenav */
-        function closeNav(x) {
-          document.getElementById("mySidenav").style.width = "0";
+      /* Open the sidenav */
+      function openNav(x) {
+        sidenav.style.width = "100%";
+      x.classList.toggle("change");
+      }
+
+      /* Close/hide the sidenav */
+      function closeNav(x) {
+          sidenav.style.width = "0";
           x.classList.toggle("change");
         }
-        if (document.getElementById("mySidenav").style.width === "100%") {
+        
+      function toggleNav (x) {
+    
+        if (sidenav.style.width === "100%") {
           closeNav(x)
         } else {
           openNav(x)
