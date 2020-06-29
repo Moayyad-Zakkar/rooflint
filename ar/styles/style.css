@@ -777,6 +777,9 @@ p {
   #footer {
     flex-direction: column;
   }
+  .contact-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Extra Small Devices, Phones */
