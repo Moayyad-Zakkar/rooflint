@@ -193,7 +193,7 @@ p {
   display: none;
   position: absolute;
   margin-top: 12px;
-  background-color: #8d8d8d;
+  background-color: #f8f8f8;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
